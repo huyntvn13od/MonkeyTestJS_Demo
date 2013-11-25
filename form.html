@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple HTML5 Form with MonkeyTestJS</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+<h1>Simple HTML5 Form</h1>
+<p>Accessible Client-side Form Validation with HTML5</p>
+
+<p>Please complete all required fields marked with a <span class="star">*</span>.</p>
+<form id="form1" name="form1" method="get" action="./form.html" onsubmit="validateForm();return false;">
+  <p>
+    <label for="fname">First name <span class="star">*</span></label>
+    <input required type="text" name="fname" id="fname">
+  </p>
+  <p>
+    <label for="sname">Surname <span class="star">*</span></label>
+    <input required type="text" name="sname" id="sname">
+  </p>
+  <p>
+    <label for="email">Email address <span class="star">*</span></label>
+    <input required type="email" name="email" id="email">
+  </p>
+  <p>
+    <label for="contact-number">Daytime contact number <span class="star">*</span></label>
+    <input required type="text" name="contact-number" id="contact-number">
+  </p>
+  <p>
+    <label for="address">Address <span class="star">*</span></label>
+    <input required type="text" name="address" id="address">
+  </p>
+  <p>
+    <label for="suburb">Suburb <span class="star">*</span></label>
+    <input required type="text" name="suburb" id="suburb">
+  </p>
+  <p>
+    <label for="state">State <span class="star">*</span></label>
+    <select id="state" name="state">
+      <option value="act"> ACT </option>
+      <option value="nsw"> NSW </option>
+      <option value="nt"> NT </option>
+      <option value="qld"> QLD </option>
+      <option value="sa"> SA </option>
+      <option value="tas"> TAS </option>
+	  <option value="vic"> VIC </option>
+	  <option value="wa"> WA </option>
+    </select>
+  </p>
+  <p>
+    <label for="postcode">Postcode <span class="star">*</span></label>
+    <input required type="text" name="postcode" id="postcode">
+  </p>
+  <p>
+    <label for="enquiry-type">Enquiry type <span class="star">*</span></label>
+    <select id="enquiry-type" name="enquiry-type">
+      <option value="1"> General enquiry </option>
+      <option value="2"> Product feedback or enquiry </option>
+      <option value="3"> Product complaint </option>
+    </select>
+  </p>
+  <p>
+    <label for="product-name" class="maybe_required">Product name <span class="star hidden">*</span></label>
+    <input type="text" name="product-name" id="product-name">
+  </p>
+  <p>
+    <label for="product-size" class="maybe_required">Product size <span class="star hidden">*</span></label>
+    <input type="text" name="product-size" id="product-size">
+  </p>
+  <p>
+    <label for="useby-date" class="maybe_required">Use-by date <span class="star hidden">*</span></label>
+    <input type="text" name="useby-date" id="useby-date">
+  </p>
+  <p>
+    <label for="batchcode" class="maybe_required">Batch code <span class="star hidden">*</span></label>
+    <input type="text" name="batchcode" id="batchcode">
+  </p>
+  <p>
+    <label for="enquiry">Enquiry </label>
+    <textarea name="enquiry" id="enquiry"></textarea>
+  </p>
+  
+  <p>
+    <input type="submit" name="sbutton" value="Submit">
+  </p>
+</form>
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
